@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Convertor.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AEACAEAAAAAAABAEAAAIQAAAEAAAAAAACAAAAAACAAA=</HashCode>
+      <FileName>Windows\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Convertor.ConvertorMainModuls.ConvertorMain">
+    <Position X="6.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAACEAAAAAAAAAAAAAAAAgACAAgAAAAAAA=</HashCode>
+      <FileName>ConvertorMainModuls\ConvertorMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Convertor.Database.qw5Entities">
+    <Position X="9.25" Y="1.75" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AEAQAFAEACsAAQA4AAAACoAAlAAABCgAARAAAAIGBIA=</HashCode>
+      <FileName>Database\Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Convertor.Windows.DatabaseSelectionWindow" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Windows\DatabaseSelectionWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Convertor.Windows.ProgressWindow" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="5.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAIAAAAAAABAAAAAAAAAAAAAAAAAgCAAgAAAAAAA=</HashCode>
+      <FileName>Windows\ProgressWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.158" Collapsed="true" />
+  </Class>
+  <Delegate Name="Convertor.ConvertorMainModuls.UpdateLogCallback" Collapsed="true">
+    <Position X="15.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConvertorMainModuls\ConvertorMain.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Convertor.ConvertorMainModuls.UpdateProgressCallback" Collapsed="true">
+    <Position X="16.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConvertorMainModuls\ConvertorMain.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

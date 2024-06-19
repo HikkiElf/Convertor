@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Convertor.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Windows\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Convertor.ConvertorMainModuls.ConvertorMain">
+    <Position X="8.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConvertorMainModuls\ConvertorMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Convertor.Database.qw5Entities">
+    <Position X="7.75" Y="5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AEAQAFAEACsAAQA4AAAACoAAlAAABCgAARAAAAIGBIA=</HashCode>
+      <FileName>Database\Model1.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Convertor.Windows.DatabaseSelectionWindow" BaseTypeListCollapsed="true">
+    <Position X="12" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Windows\DatabaseSelectionWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

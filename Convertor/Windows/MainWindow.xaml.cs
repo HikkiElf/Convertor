@@ -124,7 +124,8 @@ namespace Convertor
         /// <param name="e">Аргументы события.</param>
         private void ToJSONlogs_Click(object sender, RoutedEventArgs e)
         {
-            OpenLogsFolder(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "E:\\Diploma\\toFileLogs"));
+            string toFileLogsPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "toFilelogs");
+            OpenLogsFolder(toFileLogsPath);
         }
 
         /// <summary>
@@ -134,7 +135,8 @@ namespace Convertor
         /// <param name="e">Аргументы события.</param>
         private void ToSQLlogs_Click(object sender, RoutedEventArgs e)
         {
-            OpenLogsFolder(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "E:\\Diploma\\toSqlLogs"));
+            string toFileLogsPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "toSqllogs");
+            OpenLogsFolder(toFileLogsPath);
         }
     }
 }

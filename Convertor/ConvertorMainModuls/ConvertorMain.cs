@@ -48,11 +48,18 @@ namespace Convertor.ConvertorMainModuls
                         .Where(p => p.PropertyType.IsGenericType &&
                                     p.PropertyType.GetGenericTypeDefinition() == typeof(DbSet<>));
 
-                        // Путь к лог-файлу
-                        string logPath = $@"E:\Diploma\toFilelogs\Log-{DateTime.Now.ToString().Replace(":", "-")}.txt";
+                        // Путь к лог-файлу для конвертации в JSON
+                        string logFolderPathForJson = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "toFilelogs");
+                        string logPathForJson = Path.Combine(logFolderPathForJson, $"Log-{DateTime.Now.ToString().Replace(":", "-")}.txt");
+
+                        // Создаем папку, если она не существует
+                        if (!Directory.Exists(logFolderPathForJson))
+                        {
+                            Directory.CreateDirectory(logFolderPathForJson);
+                        }
 
                         // Запись логов в файл
-                        using (StreamWriter sw = File.CreateText(logPath))
+                        using (StreamWriter sw = File.CreateText(logPathForJson))
                         {
 
                             UpdateLog($"[{DateTime.Now:HH:mm:ss.fff}] [BEGIN] Начало конвертации");
@@ -195,11 +202,18 @@ namespace Convertor.ConvertorMainModuls
                         var jsonData = File.ReadAllText(jsonPath);
                         var data = JsonConvert.DeserializeObject<Dictionary<string, List<object>>>(jsonData);
 
-                        // Путь к лог-файлу
-                        string logPath = $@"E:\Diploma\toSqllogs\Log-{DateTime.Now.ToString().Replace(":", "-")}.txt";
+                        // Путь к лог-файлу для конвертации в SQL
+                        string logFolderPathForSql = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "toSqllogs");
+                        string logPathForSql = Path.Combine(logFolderPathForSql, $"Log-{DateTime.Now.ToString().Replace(":", "-")}.txt");
+
+                        // Создаем папку, если она не существует
+                        if (!Directory.Exists(logFolderPathForSql))
+                        {
+                            Directory.CreateDirectory(logFolderPathForSql);
+                        }
 
                         // Запись логов в файл
-                        using (StreamWriter sw = File.CreateText(logPath))
+                        using (StreamWriter sw = File.CreateText(logPathForSql))
                         {
                             UpdateLog($"[BEGIN] Начало конвертации {DateTime.Now:HH:mm:ss.fff}");
                             await sw.WriteLineAsync($"[BEGIN] Начало конвертации {DateTime.Now:HH:mm:ss.fff}");
